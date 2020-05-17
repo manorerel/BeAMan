@@ -1,0 +1,2 @@
+rootProject.name='BeAMan'
+include ':app'
