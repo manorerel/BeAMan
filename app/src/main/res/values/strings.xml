@@ -3,7 +3,14 @@
 
     <string name="guid_button">כנס לתוכן הדרכתי</string>
     <string name="treatment_button">כנס לחדרי טיפול</string>
-    <string name="forum">פורום "פותחים הכל"</string>
+    <string name="forum">פורום \"פותחים הכל\"</string>
+    <string name="chat">צ\'אט אנונימי אחד על אחד</string>
+    <string name="group_support">מרגיש בודד? בוא להכיר עוד..</string>
+    <string name="different_way">יש דרך אחרת</string>
+    <string name="legal_suggest">יעוץ משפטי בצ\'יק צ\'אק</string>
+    <string name="interview_dr">ראיון עם ד\"ר יאיר אפטר</string>
+    <string name="self_diag">מדריך לאבחון עצמי</string>
+    <string name="exercise">ריכזנו לכם כמה תרגילים</string>
 
     <string name="personal_treatment_button">טיפול יחידני</string>
     <string name="group_trail_treatment_button">טיפול קבוצתי - ניסיון</string>
