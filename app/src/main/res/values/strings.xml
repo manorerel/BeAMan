@@ -7,11 +7,13 @@
     <string name="personal_treatment_button">טיפול יחידני</string>
     <string name="group_trail_treatment_button">טיפול קבוצתי - ניסיון</string>
     <string name="group_treatment_button">טיפול קבוצתי - בתשלום</string>
-    
+
     <string name="personal_diagnosis">אבחון עצמי</string>
     <string name="treatment_explain">הסבר על טיפול</string>
     <string name="guidelines">מדריכים</string>
     <string name="success_stories">סיפורי הצלחה</string>
     <string name="legal_advice">ייעוץ משפטי</string>
     <string name="common_questions">שאלות נפוצות</string>
+
+    <string name="input_placeholder">כתוב הודעה</string>
 </resources>

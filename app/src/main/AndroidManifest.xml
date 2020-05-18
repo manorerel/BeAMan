@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.michalsela.beaman">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainTreatmentActivity"></activity>
+        <activity android:name=".ChatActivity"></activity>
+        <activity android:name=".MainTreatmentActivity" />
         <activity android:name=".GuidnaceActivity" />
         <activity android:name=".LogginActivity" />
         <activity android:name=".MainActivity">

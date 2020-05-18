@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/guid_button_id"
         android:text="@string/guid_button"
+        android:onClick="openGuidActivity"
         />
 
         <Button
@@ -22,6 +23,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/treat_button_id"
             android:text="@string/treatment_button"
+            android:onClick="openTreatActivity"
             />
 
     </LinearLayout>
