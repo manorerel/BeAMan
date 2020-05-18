@@ -10,8 +10,11 @@ public class User {
     String _firstName;
     String _lastName;
     Boolean _isTherapist;
+    String _explain;
+    String _language;
 
-    public User(String userName, String password, String mail, String firstName, String lastName, Boolean isTherapist){
+    public User(String userName, String password, String mail, String firstName, String lastName, Boolean isTherapist,
+                String explain, String language){
         _id = UUID.randomUUID().toString();
         _userName = userName;
         _password = password;
@@ -19,6 +22,8 @@ public class User {
         _lastName = lastName;
         _mail = mail;
         _isTherapist = isTherapist;
+        _explain = explain;
+        _language = language;
     }
 
     public String get_id(){return _id;}
@@ -34,4 +39,6 @@ public class User {
     public String get_firstName(){return _firstName;}
     public String get_lastName(){return _lastName;}
     public Boolean get_isTherapist(){return _isTherapist;}
+    public String get_explain(){return _explain;}
+    public String get_language(){return _language;}
 }
