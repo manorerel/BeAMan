@@ -12,9 +12,10 @@
     <string name="self_diag">מדריך לאבחון עצמי</string>
     <string name="exercise">ריכזנו לכם כמה תרגילים</string>
 
-    <string name="personal_treatment_button">טיפול יחידני</string>
-    <string name="group_trail_treatment_button">טיפול קבוצתי - ניסיון</string>
-    <string name="group_treatment_button">טיפול קבוצתי - בתשלום</string>
+    <string name="treatment_page_header">טיפול</string>
+    <string name="personal_treatment_button"> יחידני</string>
+    <string name="group_trail_treatment_button">קבוצתי  ניסיון</string>
+    <string name="group_treatment_button">קבוצתי  קבוע</string>
 
     <string name="personal_diagnosis">אבחון עצמי</string>
     <string name="treatment_explain">הסבר על טיפול</string>
