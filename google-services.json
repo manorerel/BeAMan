@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "195239024640",
+    "firebase_url": "https://beaman-a6f95.firebaseio.com",
+    "project_id": "beaman-a6f95",
+    "storage_bucket": "beaman-a6f95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195239024640:android:fa0ef85a74cc16076ae0e5",
+        "android_client_info": {
+          "package_name": "com.michalsela.beaman"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195239024640-mk2qf335lkft7scbi0en89q50iufmltv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJSPv_bIrhGUiMs9IsX70dkVRv-gsozGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195239024640-mk2qf335lkft7scbi0en89q50iufmltv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
