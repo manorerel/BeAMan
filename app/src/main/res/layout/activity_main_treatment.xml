@@ -20,7 +20,7 @@
             android:layout_height="65dp"
             android:id="@+id/personal_treat_id"
             android:text="@string/personal_treatment_button"
-            android:onClick="openChat"
+            android:onClick="openTherapistList"
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="25dp"

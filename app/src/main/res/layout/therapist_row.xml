@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_weight="10"
+    android:id="@+id/therapist_row_id"
+    android:onClick="openChat">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/therapist_image"
+        android:background="@drawable/circle_white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/therapist_name"
+        android:textColor="@color/green"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/therapist_explain"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:id="@+id/therapist_language"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
