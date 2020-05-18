@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">GentleMan</string>
 
-    <string name="guid_button">הדרכות</string>
-    <string name="treatment_button">טיפול</string>
+    <string name="guid_button">כנס לתוכן הדרכתי</string>
+    <string name="treatment_button">כנס לחדרי טיפול</string>
+    <string name="forum">פורום "פותחים הכל"</string>
 
     <string name="personal_treatment_button">טיפול יחידני</string>
     <string name="group_trail_treatment_button">טיפול קבוצתי - ניסיון</string>
