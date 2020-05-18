@@ -13,29 +13,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button guidButton = findViewById(R.id.guid_button_id);
-        guidButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openGuidActivity();
-            }
-        });
-
-        Button treatButton = findViewById(R.id.treat_button_id);
-        treatButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openTreatActivity();
-            }
-        });
     }
 
-    private void openGuidActivity(){
+    public void openGuidActivity(View view){
         Intent guidIntent = new Intent(this, GuidnaceActivity.class);
         startActivity(guidIntent);
     }
 
-    private void openTreatActivity(){
+    public void openTreatActivity(View view){
         Intent treatIntent = new Intent(this, MainTreatmentActivity.class);
         startActivity(treatIntent);
     }
