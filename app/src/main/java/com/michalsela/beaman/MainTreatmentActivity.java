@@ -14,8 +14,8 @@ public class MainTreatmentActivity extends BaseActivity {
         setContentView(R.layout.activity_main_treatment);
     }
 
-    public void openChat(View view){
-        Intent treatIntent = new Intent(this, ChatActivity.class);
+    public void openTherapistList(View view){
+        Intent treatIntent = new Intent(this, TherapistsListActivity.class);
         startActivity(treatIntent);
     }
 }

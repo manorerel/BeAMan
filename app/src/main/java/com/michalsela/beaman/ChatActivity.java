@@ -33,6 +33,7 @@ public class ChatActivity extends BaseActivity implements RoomListener {
     private String channelID = "tm2JbZYxxuokPukq";
     private String roomName = "observable-room";
     private EditText editText;
+    private String therapsitName;
     private Scaledrone scaledrone;
     private MessageAdapter messageAdapter;
     private ListView messagesView;
@@ -43,8 +44,10 @@ public class ChatActivity extends BaseActivity implements RoomListener {
         setContentView(R.layout.activity_chat);
         editText = (EditText) findViewById(R.id.editText);
         Random r = new Random();
-        roomName = roomName + r.nextInt();
 
+        Bundle b = getIntent().getExtras();
+        therapsitName = b.getString("therapist");
+        roomName = roomName + r.nextInt();
         messageAdapter = new MessageAdapter(this);
         messagesView = (ListView) findViewById(R.id.messages_view);
         messagesView.setAdapter(messageAdapter);

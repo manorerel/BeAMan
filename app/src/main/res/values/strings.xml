@@ -25,4 +25,6 @@
     <string name="common_questions">שאלות נפוצות</string>
 
     <string name="input_placeholder">כתוב הודעה</string>
+
+    <string name="search_therapist">חפש מטפל</string>
 </resources>
