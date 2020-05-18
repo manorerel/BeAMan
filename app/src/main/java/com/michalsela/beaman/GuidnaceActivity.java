@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class GuidnaceActivity extends AppCompatActivity {
+public class GuidnaceActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class ChatActivity extends AppCompatActivity implements RoomListener {
+public class ChatActivity extends BaseActivity implements RoomListener {
     private String channelID = "tm2JbZYxxuokPukq";
     private String roomName = "observable-room";
     private EditText editText;
