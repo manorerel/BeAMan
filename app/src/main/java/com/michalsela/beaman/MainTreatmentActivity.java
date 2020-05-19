@@ -18,4 +18,9 @@ public class MainTreatmentActivity extends BaseActivity {
         Intent treatIntent = new Intent(this, TherapistsListActivity.class);
         startActivity(treatIntent);
     }
+
+    public void openGroupCaht(View view){
+        Intent groupVideoChatIntent = new Intent(this, GroupVideoChatActivity.class);
+        startActivity(groupVideoChatIntent);
+    }
 }
