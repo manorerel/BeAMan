@@ -16,11 +16,13 @@ public class MainTreatmentActivity extends BaseActivity {
 
     public void openTherapistList(View view){
         Intent treatIntent = new Intent(this, TherapistsListActivity.class);
+        treatIntent.putExtra("kind","personal");
         startActivity(treatIntent);
     }
 
     public void openGroupCaht(View view){
-        Intent groupVideoChatIntent = new Intent(this, GroupVideoChatActivity.class);
+        Intent groupVideoChatIntent = new Intent(this, TherapistsListActivity.class);
+        groupVideoChatIntent.putExtra("kind","group");
         startActivity(groupVideoChatIntent);
     }
 }

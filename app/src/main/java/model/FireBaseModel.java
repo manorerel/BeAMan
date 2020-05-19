@@ -59,6 +59,25 @@ public class FireBaseModel {
         return therapists;
     }
 
+    public static List<Group> getGourps(){
+        List<Group> groups = new ArrayList<>();
+        Group g1 = new Group("1", "כהן", "ב\' ו-ה\'", "18:00-20:00", "עברית");
+        Group g2 = new Group("2", "חטיב", "א\' ו-ג\'", "15:00-16:30", "ערבית");
+        Group g3 = new Group("3", "בשבסקי", "ב\' ו-ד\'", "17:00-18:00", "רוסית");
+        Group g4 = new Group("4", "מיטשל", "ג\' ו-ו\'", "16:00-17:30", "אנגלית");
+        Group g5 = new Group("5", "חובב", "ב\' ו-ד\'", "18:00-19:30", "עברית");
+        Group g6 = new Group("6", "שריסט", "ד\' ו-ה\'", "19:00-20:00", "עברית");
+
+        groups.add(g1);
+        groups.add(g2);
+        groups.add(g3);
+        groups.add(g4);
+        groups.add(g5);
+        groups.add(g6);
+
+        return groups;
+    }
+
     private static Map<String, Object> userToMap(User user){
         Map<String, Object> mapUser = new HashMap<>();
         mapUser.put("id", user.get_id());
