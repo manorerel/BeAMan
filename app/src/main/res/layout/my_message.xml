@@ -7,16 +7,28 @@
     android:paddingLeft="60dp"
     android:clipToPadding="false">
 
+    <ImageView
+        android:id="@+id/my_message_avatar"
+
+        android:scaleType="centerInside"
+        android:src="@drawable/user_icon_white"
+        android:background="@drawable/circle"
+        android:layout_alignParentRight="true"
+        android:layout_width="34dp"
+        android:layout_height="34dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/message_body"
+        android:layout_below="@+id/my_message_avatar"
+        android:layout_alignRight="@+id/my_message_avatar"
         android:background="@drawable/my_message"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         android:padding="10dp"
         android:elevation="2dp"
         android:textSize="18dp"
-        android:layout_alignParentRight="true"
+
         android:text="Placeholder message"
         />
 

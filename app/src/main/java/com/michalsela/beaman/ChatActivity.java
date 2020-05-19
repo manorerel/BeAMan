@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import model.MemberData;
 import model.User;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
@@ -47,10 +48,12 @@ public class ChatActivity extends BaseActivity implements RoomListener {
 
         Bundle b = getIntent().getExtras();
         therapsitName = b.getString("therapist");
-        roomName = roomName + r.nextInt();
+        roomName = roomName;
         messageAdapter = new MessageAdapter(this);
         messagesView = (ListView) findViewById(R.id.messages_view);
         messagesView.setAdapter(messageAdapter);
+        TextView header = findViewById(R.id.chat_header);
+        header.setText("התחלת צ\'אט עם ד\"ר " + therapsitName);
 
         MemberData data = new MemberData(getRandomName(), getRandomColor());
         scaledrone = new Scaledrone(channelID, data);
@@ -134,6 +137,10 @@ public class ChatActivity extends BaseActivity implements RoomListener {
         }
     }
 
+    public void back(View v){
+        finish();
+    }
+
     private String getRandomName() {
         String[] adjs = {"autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark", "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter", "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue", "billowing", "broken", "cold", "damp", "falling", "frosty", "green", "long", "late", "lingering", "bold", "little", "morning", "muddy", "old", "red", "rough", "still", "small", "sparkling", "throbbing", "shy", "wandering", "withered", "wild", "black", "young", "holy", "solitary", "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine", "polished", "ancient", "purple", "lively", "nameless"};
         String[] nouns = {"waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly", "feather", "grass", "haze", "mountain", "night", "pond", "darkness", "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder", "violet", "water", "wildflower", "wave", "water", "resonance", "sun", "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog", "smoke", "star"};
@@ -184,6 +191,7 @@ class MessageAdapter extends BaseAdapter {
     }
 
     // This is the backbone of the class, it handles the creation of single ListView row (chat bubble)
+    @SuppressLint("ResourceAsColor")
     @Override
     public View getView(int i, View convertView, ViewGroup viewGroup) {
         MessageViewHolder holder = new MessageViewHolder();
@@ -193,19 +201,23 @@ class MessageAdapter extends BaseAdapter {
         if (message.isBelongsToCurrentUser()) { // this message was sent by us so let's create a basic chat bubble on the right
             convertView = messageInflater.inflate(R.layout.my_message, null);
             holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
+//            holder.avatar = (View) convertView.findViewById(R.id.my_message_avatar);
             convertView.setTag(holder);
             holder.messageBody.setText(message.getText());
+//            holder.messageBody.setTextColor(R.color.white);
+//            GradientDrawable drawable1 = (GradientDrawable) holder.avatar.getBackground();
+//            drawable1.setColor(R.color.green);
         } else { // this message was sent by someone else so let's create an advanced chat bubble on the left
             convertView = messageInflater.inflate(R.layout.their_message, null);
-            holder.avatar = (View) convertView.findViewById(R.id.avatar);
-            holder.name = (TextView) convertView.findViewById(R.id.name);
+//            holder.avatar = (View) convertView.findViewById(R.id.avatar);
+//            holder.name = (TextView) convertView.findViewById(R.id.name);
             holder.messageBody = (TextView) convertView.findViewById(R.id.message_body);
             convertView.setTag(holder);
 
-            holder.name.setText(message.getMemberData().getName());
             holder.messageBody.setText(message.getText());
-            GradientDrawable drawable = (GradientDrawable) holder.avatar.getBackground();
-            drawable.setColor(Color.parseColor(message.getMemberData().getColor()));
+//            holder.messageBody.setTextColor(R.color.green);
+//            GradientDrawable drawable = (GradientDrawable) holder.avatar.getBackground();
+//            drawable.setColor(R.color.green);
         }
 
         return convertView;
@@ -213,7 +225,5 @@ class MessageAdapter extends BaseAdapter {
 }
 
 class MessageViewHolder {
-    public View avatar;
-    public TextView name;
     public TextView messageBody;
 }
