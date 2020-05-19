@@ -30,4 +30,12 @@
     <string name="search_therapist">חפש מטפל</string>
 
     <string name="video_chat_header">כנס והחל וידאו עם הקבוצה שלך</string>
+
+    <string name="personal_name">רונן</string>
+    <string name="personal_email">תראה כמה אתה קרוב לסיום האתגר השבועי</string>
+    <string name="my_challenges">אתגרים</string>
+    <string name="favorites">מועדפים</string>
+    <string name="messages">הודעות</string>
+    <string name="progress">80% למילוי האתגר</string>
+
 </resources>
