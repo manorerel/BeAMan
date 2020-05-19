@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title=""
+        android:icon="@drawable/setting_icon_white"
+        app:showAsAction="always"/>
+    <item
+        android:title=""
+        android:icon="@drawable/message_icon_white"
+        app:showAsAction="always"/>
+    <item
+        android:title=""
+        android:icon="@drawable/user_icon_white"
+        app:showAsAction="always"
+        android:id="@+id/user_self_place"/>
+    <item
+        android:title=""
+        android:icon="@drawable/menu_icon_white"
+        app:showAsAction="always"
+        >
+        <menu >
+            <item
+                android:title="@string/personal_treatment_button"
+                android:id="@+id/personal_treat"/>
+            <item
+                android:title="@string/group_treatment_button"
+                android:id="@+id/group_treat"/>
+        </menu>
+    </item>
+</menu>
+
