@@ -31,7 +31,7 @@
             android:layout_height="65dp"
             android:id="@+id/group_trail_treat_id"
             android:text="@string/group_trail_treatment_button"
-            android:onClick="openChat"
+            android:onClick="openGroupCaht"
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="25dp"
@@ -42,12 +42,13 @@
             android:layout_height="65dp"
             android:id="@+id/group_treat_id"
             android:text="@string/group_treatment_button"
-            android:onClick="openChat"
+            android:onClick="openGroupCaht"
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:background="@drawable/buttons"
-            android:layout_margin="20dp"/>
+            android:layout_margin="20dp"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

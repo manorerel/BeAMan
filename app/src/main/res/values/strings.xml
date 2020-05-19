@@ -27,4 +27,6 @@
     <string name="input_placeholder">כתוב הודעה</string>
 
     <string name="search_therapist">חפש מטפל</string>
+
+    <string name="video_chat_header">כנס והחל וידאו עם הקבוצה שלך</string>
 </resources>
