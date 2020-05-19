@@ -16,7 +16,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void openGuidActivity(View view){
-        Intent guidIntent = new Intent(this, GuidnaceActivity.class);
+        Intent guidIntent = new Intent(this, PersonalZoneActivity.class);
         startActivity(guidIntent);
     }
 
