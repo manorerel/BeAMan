@@ -42,6 +42,8 @@ public class BaseActivity extends AppCompatActivity {
         // Handle item selection
         switch (item.getItemId()) {
             case R.id.user_self_place:{
+                Intent personalPlaceIntent = new Intent(this, PersonalZoneActivity.class);
+                startActivity(personalPlaceIntent);
                 return true;
             }
             case R.id.personal_treat: {

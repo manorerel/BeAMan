@@ -102,6 +102,8 @@ class PostsAdapter extends BaseAdapter {
         TextView linkString = convertView.findViewById(R.id.link_string);
         ImageView postImage = convertView.findViewById(R.id.post_image);
         LinearLayout linearLayout = convertView.findViewById(R.id.post_row);
+        TextView postLikes = convertView.findViewById(R.id.post_likes);
+        TextView hashTag = convertView.findViewById(R.id.post_hash_tag);
 
         postHeader.setText(posts.get(position).get_header());
         postHeader.setTag(position);
@@ -112,6 +114,9 @@ class PostsAdapter extends BaseAdapter {
         postImage.setImageDrawable(imagesPost.get(position));
         postImage.setTag(position);
         linearLayout.setTag(position);
+        Integer likes = posts.get(position).get_likesCount();
+        postLikes.setText(likes.toString());
+        hashTag.setText(posts.get(position).get_category());
 
         return convertView;
     }

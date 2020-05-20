@@ -83,23 +83,23 @@ public class FireBaseModel {
     public static List<Post> getPosts(){
         List<Post> posts = new ArrayList<>();
         Post p1 = new Post("ביחד הצלחנו לעשות זאת","קבוצת התמיכה נתנה לי את הכוח להמשיך את התהליך, מספר אורי",
-                "לעוד סיפורי הצלחה", "", "sucess",R.drawable.post_one, 90);
+                "לעוד סיפורי הצלחה", "", "#סיפורי הצלחה",R.drawable.post_one, 90);
 
         Post p2 = new Post("איך אתה מרגיש היום?",
                 "אנחנו כאן כדי לשמוע אותך. בלחיצת כפתור תוכל להצטרף לצ'אט אישי או לקבוצת תמיכה", "להתחלת צ'אט ניסיון",
-                "", "guid",R.drawable.post_tow, 48);
+                "", "#אבחון",R.drawable.post_tow, 48);
         Post p3 = new Post("עשרה תרגילי נשימה לתרגול","תרגילי נשימה קלילים לתרגול בכל זמן ובכל מקום",
-                "כנס לתרגל", "https://www.youtube.com/watch?v=sbrOSeZiRp4", "guid",R.drawable.post_three, 52);
+                "כנס לתרגל", "https://www.youtube.com/watch?v=sbrOSeZiRp4", "#כלים מסייעים",R.drawable.post_three, 52);
         Post p4 = new Post("\"הייתה לי שליטה מלאה באישה\"","במקום בכלא - בבית פרטי בבאר שבע חיים גברים שהורשעו בעבירות אלימות במשפחה. שם יש פיקוח וטיפול, וגם הילדים באים לבקר...",
                 "כנס לכתבה", "https://www.ynet.co.il/articles/0,7340,L-5046837,00.html",
-                "article",R.drawable.first_pic, 90);
+                "#אבחון",R.drawable.first_pic, 90);
         Post p5 = new Post("\"אם נתגרש - ארצח אותך ואתאבד\"",
                 "אורלי אוימה ברצח על ידי בעלה לשעבר. על רקע שמונת מקרי הרצח של נשים על ידי בני זוגן מתחילת השנה..",
-                "כנס לכתבה", "https://www.ynet.co.il/articles/0,7340,L-5732722,00.html", "article",R.drawable.second, 90);
+                "כנס לכתבה", "https://www.ynet.co.il/articles/0,7340,L-5732722,00.html", "#אבחון",R.drawable.second, 90);
         Post p6 = new Post("סיוע משפטי בנושא אלימות במשפחה מטעם משרד המשפטים",
                 "משרד המשפטים מעניק לאוכלוסיות הזכאיות סיוע משפטי בתחומים אזרחיים הכוללים, בין היתר, את נושא האלימות במשפחה. הסיוע ניתן במקרים שבהם קיים לכך ביסוס משפטי.",
                 "להסבר לחץ כאן", "https://www.kolzchut.org.il/he/%D7%A1%D7%99%D7%95%D7%A2_%D7%9E%D7%A9%D7%A4%D7%98%D7%99_%D7%91%D7%A0%D7%95%D7%A9%D7%90_%D7%90%D7%9C%D7%99%D7%9E%D7%95%D7%AA_%D7%91%D7%9E%D7%A9%D7%A4%D7%97%D7%94_%D7%9E%D7%98%D7%A2%D7%9D_%D7%9E%D7%A9%D7%A8%D7%93_%D7%94%D7%9E%D7%A9%D7%A4%D7%98%D7%99%D7%9D",
-                "legal",R.drawable.three, 90);
+                "#יעוץ משפטי",R.drawable.three, 90);
 
         posts.add(p1);
         posts.add(p2);

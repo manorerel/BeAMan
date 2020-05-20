@@ -45,5 +45,6 @@ public class Post {
     public String get_linkString(){return _linkString;}
     public String get_link(){return _link;}
     public int get_likesCount(){return _likesCount;}
+    public String get_category(){return _category;}
     public void set_likesCount(){_likesCount++;}
 }

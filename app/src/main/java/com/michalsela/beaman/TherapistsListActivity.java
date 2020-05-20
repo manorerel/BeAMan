@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -44,15 +45,18 @@ public class TherapistsListActivity extends BaseActivity {
         therapistsImages.add(getResources().getDrawable(R.drawable.therapist_six));
         therapistsImages.add(getResources().getDrawable(R.drawable.therapist_seven));
         Bundle b = getIntent().getExtras();
+        Button btn = findViewById(R.id.forum_btn);
         String temp = b.getString("kind");
         if(temp!= null){
             if(temp.equals("personal")){
                 therapistsList = FireBaseModel.getAllTherapists();
                 isGroup = false;
+                btn.setVisibility(View.INVISIBLE);
                 lst.setAdapter(new TherapistsAdapter(this, therapistsList, therapistsImages));
             }
             else {
                 isGroup = true;
+                btn.setVisibility(View.VISIBLE);
                 groupsList = FireBaseModel.getGourps();
                 lst.setAdapter(new GroupsAdapter(this, groupsList, therapistsImages));
             }
